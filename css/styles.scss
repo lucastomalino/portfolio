@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body{
+    font-family: monospace;
+    background: #333;
+}
+
+.contenedor{
+    margin: auto;
+}
+
+h1{
+    float: left;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    span{
+        position: absolute;
+        right: 0;
+        width: 0;
+        background: #333;
+        border-left: 1px solid #000;
+        animation: maquina 5s alternate steps(200);
+        overflow: hidden;
+    }
+}
+
+@keyframes maquina{
+    from {width: 100%}
+    to {width: 0}
+}
+
