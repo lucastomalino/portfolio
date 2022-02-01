@@ -1,33 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-body{
-    font-family: monospace;
-    background: #333;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.contenedor{
-    margin: auto;
+
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.row{
+    margin: 0;
+    background-color: #555;
+    
 }
 
 h1{
-    float: left;
-    color: #fff;
-    position: relative;
+    margin: 0;
+    background-color: #444;
+    color: goldenrod;
     text-align: center;
-    width: 100%;
-    span{
-        position: absolute;
-        right: 0;
-        width: 0;
-        background: #333;
-        border-left: 1px solid #000;
-        animation: maquina 5s alternate steps(200);
-        overflow: hidden;
+    height: auto;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    letter-spacing: 2px;
+    
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: #333;
+    border: 2px solid black;
+    font-size: 2rem;
+    color: goldenrod;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.card{
+    padding: 50px;
+    border: 0px;
+    background-color: transparent;
+    .card-header{
+        text-align: center;
+        font-size: 2rem;
+        background-color: #444;
+        color: goldenrod;
+    }
+
+    .card-body{
+        background-color: #333;
+        padding: 0;
+
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .card-footer{
+        text-align: center;
+        
+        background-color: #444;
+
+        .btn{
+            font-size: 1rem;
+            color: goldenrod;
+            border: goldenrod 2px solid;
+        }
+        .btn:hover{
+            transition: 1.5s ease;
+            transform: scale(1.1);
+            color: #444;
+            background-color: goldenrod;
+            
+        }
+        
     }
 }
 
-@keyframes maquina{
-    from {width: 100%}
-    to {width: 0}
+.tecnologias{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 3rem;
+    padding: 20px;
 }
 
+.fa-html5:hover{
+    transition: ease 1s;
+    color:  #e55327;
+
+}
+
+.fa-css3-alt:hover{
+    transition: ease 1s;
+    color: #1a6ca1;
+}
+
+.fa-bootstrap:hover{
+    transition: ease 1s;
+    color:  #543b7c;
+}
+
+.fa-sass:hover{
+    transition: ease 1s;
+    color: #cc6c9c ;
+}
+
+.fa-git:hover{
+    transition: ease 1s;
+    color: #423104;
+}
+
+.fa-github:hover{
+    transition: ease 1s;
+    color: black;
+}
